@@ -11,7 +11,7 @@ Run Comps/swarm_rates.py
 
 If collecting new data:
     run "pip install -U git+https://github.com/KT-Yeh/mihomo.git"
-    run "pip install genshin", "pip install pygsheets"
+    run "pip install genshin", "pip install pygsheets", "pip install plyer"
     Run "py mihomo/nohomo.py"
 If using past data:
     Copy mihomo/results/{version}_output.csv to mihomo/output.csv
