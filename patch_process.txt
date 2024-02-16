@@ -1,3 +1,5 @@
+MUST DO THIS!!!!!! CHANGE ALL "MihoyoApi" to "MihoyoAPI"
+
 In case of new character/relics:
     Run Comps/update.py
     Add comp role at composition.py line 62
@@ -8,7 +10,7 @@ Run Comps/comp_rates.py
 Run Comps/swarm_rates.py
 
 If collecting new data:
-    Update mihomo: pip install -U git+https://github.com/KT-Yeh/mihomo.git
+    run "pip install -U git+https://github.com/KT-Yeh/mihomo.git"
     run "pip install genshin", "pip install pygsheets"
     Run "py mihomo/nohomo.py"
 If using past data:
