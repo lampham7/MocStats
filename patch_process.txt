@@ -9,7 +9,7 @@ Change run_commands in the same file, line 32
 Run Comps/comp_rates.py
 Run Comps/swarm_rates.py
 
-If collecting new data:
+If collecting new players' characters (NOT MoC/PF team data) data:
     run "pip install -U git+https://github.com/KT-Yeh/mihomo.git"
     run "pip install genshin", "pip install pygsheets", "pip install plyer"
     Run "py mihomo/nohomo.py"
