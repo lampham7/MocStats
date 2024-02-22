@@ -1,12 +1,12 @@
 MUST DO THIS!!!!!! CHANGE ALL "MihoyoApi" to "MihoyoAPI"
 
 In case of new character/relics:
-    Run Comps/update.py
+    Open in Terrminal, paste "python Comps/update.py", enter
     Add comp role at composition.py line 62
 
 Change past_phase in Comps/comp_rates_config.py
 Change run_commands in the same file, line 32
-Run Comps/comp_rates.py
+Run "python Comps/comp_rates.py"
 Run Comps/swarm_rates.py
 
 If collecting new players' characters (NOT MoC/PF team data) data:
