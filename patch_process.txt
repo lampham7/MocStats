@@ -1,13 +1,13 @@
 MUST DO THIS!!!!!! CHANGE ALL "MihoyoApi" to "MihoyoAPI"
 
 In case of new character/relics:
-    Open folder "Comps", right click open Terrminal, paste "python Comps/update.py" then Enter
+    Open folder "Comps", right click open Terrminal, paste "python update.py" then Enter
     Add comp role at composition.py line 62
 
 Change past_phase in Comps/comp_rates_config.py
 Change run_commands in the same file, line 32
 
-Open folder "Comps", right click open Terrminal, paste "python Comps/comp_rates.py" then Enter
+Open folder "Comps", right click open Terrminal, paste "python comp_rates.py" then Enter
 
 Run Comps/swarm_rates.py
 
