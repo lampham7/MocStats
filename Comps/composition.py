@@ -25,7 +25,7 @@ class Composition:
         char_elemeent_list: returns the list of character's elements.
     """
 
-    def __init__(self, uid, comp_chars, phase, round_num, star_num, room, info_char):
+    def __init__(self, uid, comp_chars, phase, round_num, star_num, room, info_char, buff):
         """Composition constructor. Takes in:
             A player, as a UID string
             A composition, as a length-four list of character strings
@@ -38,6 +38,7 @@ class Composition:
         self.round_num = int(round_num)
         self.star_num = int(star_num)
         self.char_structs(comp_chars, info_char)
+        self.buff = buff
         # self.comp_elements()
 
     def char_structs(self, comp_chars, info_char):
@@ -78,11 +79,11 @@ class Composition:
                 self.dps.insert(0, character)
             elif character in ["Qingque", "Arlan", "Himeko", "Dan Heng", "Sushang"]:
                 self.dps.append(character)
-            elif character in ["Clara", "Blade", "Jingliu", "Xueyi", "Black Swan"]:
+            elif character in ["Clara", "Blade", "Jingliu", "Xueyi", "Misha", "Black Swan"]:
                 self.subdps.insert(0, character)
             elif character in ["Welt", "Serval", "Physical Trailblazer", "Sampo", "Herta", "Luka", "Topaz & Numby", "Guinaifen"]:
                 self.subdps.append(character)
-            elif character in ["Bronya", "Silver Wolf", "Asta", "Tingyun", "Pela", "Yukong", "Hanya", "Ruan Mei"]:
+            elif character in ["Bronya", "Silver Wolf", "Asta", "Tingyun", "Pela", "Yukong", "Hanya", "Ruan Mei","Sparkle"]:
                 self.anemo.append(character)
             elif character in ["Natasha", "Luocha", "Bailu", "Lynx", "Huohuo"]:
                 self.healer.insert(0, character)
@@ -150,7 +151,7 @@ class Composition:
                 archetype = " No Sustain"
                 self.alt_comp_name = self.characters[0] + " No Sustain"
             elif len(self.dps) + len(self.subdps) > 1:
-                if len(self.dps) + len(self.subdps) > 2:
+                if len(self.dps) + len(self.subdps) > 2 and "Follow-Up" not in self.alt_comp_name:
                     archetype = " Triple Carry"
                 else:
                     archetype = " Dual Carry"
